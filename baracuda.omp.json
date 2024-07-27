@@ -70,6 +70,27 @@
           "trailing_diamond": "",
           "template": " \ueba2 {{ .FormattedMs }} "
         },
+	{
+	  "type": "aws",
+	  "style": "diamond",
+	  "foreground": "#FF9C08",
+	  "background": "#2C3644",
+	  "leading_diamond": "\ue0b2",
+	  "trailing_diamond": "",
+	  "template": " \uf0ef {{ .Profile }}{{ if .Region }}@{{ .Region }}{{ end }}"
+	},
+	{
+	  "type": "az",
+	  "style": "diamond",
+	  "foreground": "#088DD7",
+	  "background": "#FFFFFF",
+	  "leading_diamond": "\ue0b2",
+	  "trailing_diamond": "",
+	  "template": " \uebd8 {{ .EnvironmentName }}",
+	  "properties": {
+	    "source": "pwsh"
+	  }
+	},
         {
           "type": "node",
           "style": "diamond",
@@ -94,6 +115,33 @@
           "trailing_diamond": "",
           "template": " \udb81\udeb2 {{ .Full }} "
         },
+	{
+	  "type": "dotnet",
+	  "style": "diamond",
+	  "foreground": "#198bc9",
+	  "background": "#613494",
+	  "leading_diamond": "\ue0b2",
+	  "trailing_diamond": "",
+	  "template": " \ue77f {{ .Full }} "
+	},
+	{
+	  "type": "java",
+	  "style": "diamond",
+	  "foreground": "#F89B24",
+	  "background": "#5886A4",
+	  "leadig_diamond": "\ue0b2",
+	  "trqailing_diamond": "",
+	  "template": " \ue738 {{ .Full }} "
+	},
+	{
+	  "type": "python",
+	  "style": "diamond",
+	  "foreground": "#FFDE58",
+	  "background": "#3975A5",
+	  "leading_diamond": "\ue0b2",
+	  "trailing_diamond": "",
+	  "template": " \ue73c {{ .Full }} "
+	},
         {
           "type": "battery",
           "style": "diamond",
@@ -161,5 +209,10 @@
       ]
     }
   ],
+  "debug_prompt": {
+    "background": "transparent",
+    "foreground": "#ffffff",
+    "template": " Debugging "
+  },
   "osc99": true
 }
