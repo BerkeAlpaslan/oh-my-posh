@@ -118,7 +118,7 @@
 	{
 	  "type": "dotnet",
 	  "style": "diamond",
-	  "foreground": "#198bc9",
+	  "foreground": "#f7f7f7",
 	  "background": "#613494",
 	  "leading_diamond": "\ue0b2",
 	  "trailing_diamond": "",
@@ -157,7 +157,7 @@
             "{{ if and (ge .Percentage 81) (le .Percentage 90) }}#00FF00{{ end }}",
             "{{ if and (ge .Percentage 91) (le .Percentage 100) }}#008000{{ end }}"
           ],
-          "background": "#303030",
+          "background": "#444444",
           "leading_diamond": "\ue0b2",
           "trailing_diamond": "",
           "template": "{{ if eq \"True\" (title (default \"False\" .Env.DISABLE_SEGMENT_BATTERY)) }}{{ else }}{{ if not .Error }}{{ if eq \"Charging\" .State.String }}{{ if le .Percentage 10 }} \udb82\udc9c {{ .Percentage }}% {{ else if and (ge .Percentage 11) (le .Percentage 20) }} \udb80\udc86 {{ .Percentage }}% {{ else if and (ge .Percentage 21) (le .Percentage 30) }} \udb80\udc87 {{ .Percentage }}% {{ else if and (ge .Percentage 31) (le .Percentage 40) }} \udb80\udc88 {{ .Percentage }}% {{ else if and (ge .Percentage 41) (le .Percentage 50) }} \udb82\udc9d {{ .Percentage }}% {{ else if and (ge .Percentage 51) (le .Percentage 60) }} \udb80\udc89 {{ .Percentage }}% {{ else if and (ge .Percentage 61) (le .Percentage 70) }} \udb82\udc9e {{ .Percentage }}% {{ else if and (ge .Percentage 71) (le .Percentage 80) }} \udb80\udc8a {{ .Percentage }}% {{ else if and (ge .Percentage 81) (le .Percentage 90) }} \udb80\udc8b {{ .Percentage }}% {{ else }} \udb80\udc85 {{ .Percentage }}% {{ end }}{{ else }}{{ if le .Percentage 10 }} \udb80\udc7a {{ .Percentage }}% {{ else if and (ge .Percentage 11) (le .Percentage 20) }} \udb80\udc7b {{ .Percentage }}% {{ else if and (ge .Percentage 21) (le .Percentage 30) }} \udb80\udc7c {{ .Percentage }}% {{ else if and (ge .Percentage 31) (le .Percentage 40) }} \udb80\udc7d {{ .Percentage }}% {{ else if and (ge .Percentage 41) (le .Percentage 50) }} \udb80\udc7e {{ .Percentage }}% {{ else if and (ge .Percentage 51) (le .Percentage 60) }} \udb80\udc7f {{ .Percentage }}% {{ else if and (ge .Percentage 61) (le .Percentage 70) }} \udb80\udc80 {{ .Percentage }}% {{ else if and (ge .Percentage 71) (le .Percentage 80) }} \udb80\udc81 {{ .Percentage }}% {{ else if and (ge .Percentage 81) (le .Percentage 90) }} \udb80\udc82 {{ .Percentage }}% {{ else }} \udb80\udc79 {{ .Percentage }}% {{ end }}{{ end }}{{ else }}!{{ end }}{{ end }}"
@@ -165,8 +165,8 @@
         {
           "type": "sysinfo",
           "style": "diamond",
-          "foreground": "#ffffff",
-          "background": "#516beb",
+          "foreground": "#e0f8ff",
+          "background": "#5886a4",
           "leading_diamond": "\ue0b2",
           "trailing_diamond": "",
           "template": " \ue266 RAM: {{ (div ((sub .PhysicalTotalMemory .PhysicalFreeMemory)|float64) 1073741824.0) }}/{{ (div .PhysicalTotalMemory 1073741824.0)}}GB | {{ round .PhysicalPercentUsed .Precision }}% "
@@ -176,7 +176,7 @@
           "style": "diamond",
           "invert_powerline": true,
           "foreground": "#ffffff",
-          "background": "#40c4ff",
+          "background": "#0077c2",
           "leading_diamond": "\ue0b2",
           "trailing_diamond": "\ue0b4",
           "template": " \udb80\udcf0 {{ .CurrentDate | date .Format }} ",
