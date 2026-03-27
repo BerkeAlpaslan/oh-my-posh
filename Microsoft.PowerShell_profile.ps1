@@ -2,3 +2,4 @@
 [Console]::OutputEncoding = [Text.Encoding]::UTF8
 . $env:USERPROFILE\.config\powershell\user_profile.ps1
 $env:Path += ";C:\Users\berke\Appdata\Local\Programs\oh-my-posh\bin"
+$env:Path += ";C:\Users\berke\.local\bin"

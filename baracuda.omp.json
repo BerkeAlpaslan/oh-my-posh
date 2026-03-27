@@ -113,7 +113,7 @@
             "yarn_icon": "<#2e2a64>\ue6a7</>"
           },
           "leading_diamond": "\ue0b2",
-          "template": " \ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
+          "template": " \ued0d {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
           "foreground": "#3c873a",
           "powerline_symbol": "\ue0b0",
           "background": "#303030",
@@ -241,11 +241,5 @@
       ]
     }
   ],
-  "upgrade": {
-    "notice": true,
-    "interval": "24h",
-    "auto": true,
-    "source": "cdn"
-  },
   "version": 3
 }
